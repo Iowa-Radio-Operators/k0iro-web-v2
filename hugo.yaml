@@ -77,7 +77,11 @@ menu:
     - identifier: about
       name: About
       url: /about/
-      weight: 20
+      weight: 10
+    - identifier: become-operator
+      name: Become an Operator
+      url: /become-a-ham
+      weight: 20      
     - identifier: categories
       pre: dropdown
       name: Categories
