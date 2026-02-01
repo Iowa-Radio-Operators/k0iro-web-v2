@@ -55,11 +55,10 @@ params:
 
   p1:
     heading: "Our mission"
+    image: "images/pages/Front-Mission-Collage.png"
     content:
       - text: "We are more than a club—we're a statewide hub for amateur radio enthusiasts, dedicated to fostering community, education, and collaboration. Our mission is to bridge the gap for operators without access to local clubs, offering resources and opportunities to connect and grow."
       - text: "Partnering with local clubs, we aim to enrich the shared experience of learning and communication. Together, we’re advancing the craft, embracing innovation, and building a vibrant network of radio operators across Iowa."
-     
-
 
   social_media:
     github:
@@ -71,10 +70,14 @@ params:
     youtube:
       enabled: true
       url: 'https://www.youtube.com/@K0IRO-IowaRadioOperators'
+    email:
+      enabled: true
+      url: 'mailto:info@k0iro.com'
 
 menu:
   main:
     - identifier: about
+      pre: dropdown
       name: About
       url: /about/
       weight: 10
@@ -82,46 +85,49 @@ menu:
       name: Become an Operator
       url: /become-a-ham
       weight: 20      
-    - identifier: categories
+    - identifier: news
       pre: dropdown
-      name: Categories
+      name: News
       weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
+    - identifier: meetings
+      url: /categories/meetings
+      name: Meetings
       weight: 40
+    - identifier: community
+      pre: dropdown
+      name: Community
+      url: /community/community
+      weight: 50
     - identifier: contact
       name: Contact
       url: /contact/
-      weight: 50
-  categories:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
+      weight: 60
+  about:
     - identifier: about
       name: About
       url: /about/
+      weight: 10   
+    - identifier: leadership
+      name: Leadership
+      url: /leadership/
       weight: 20
-  dropdown:
-    - identifier: appearance
-      pre: stars # can be stars, comments or piechart
-      name: Appearance
-      post: "Easy customization"
-      url: "#"
-      weight: 10
-    - identifier: comments
-      pre: comments # can be stars, comments or piechart
-      name: Comments
-      post: "Check your latest comments"
-      url: "#"
-      weight: 20
-    - identifier: analytics
-      pre: piechart # can be stars, comments or piechart
-      name: Analytics
-      post: "Take a look at your statistics"
-      url: "#"
+    - identifier: mission-vision
+      name: Mission & Vision
+      url: /mission-vision/
       weight: 30
+    - identifier: Membership
+      name: Membership
+      url: /membership/
+      weight: 40
+  news:
+    - identifier: news
+      name: News
+      url: /categories/news
+      weight: 10   
+    - identifier:  blog
+      name: Blog
+      url: /categories/blog/
+      weight: 20  
   footer:
     - identifier: about
       name: About
@@ -135,14 +141,10 @@ menu:
       name: News
       url: /categories/news/
       weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
-      weight: 50
+      weight: 40
 
 taxonomies:
   category: Categories
