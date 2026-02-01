@@ -1,0 +1,197 @@
+baseURL: 'https://www.k0iro.comm'
+title: K0IRO | Iowa Radio Operators
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: false
+enableRobotsTXT: true
+canonifyURLs: false
+pagination:
+  pagerSize: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Iowa Radio Operators
+  moto: "A Statewide Club for Radio Enthusiasts"
+  description: ""
+  disable_theme_toggle: false
+  newsletter_signup: false
+
+  p1:
+    heading: "Our mission"
+    content:
+      - text: "We are more than a club—we're a statewide hub for amateur radio enthusiasts, dedicated to fostering community, education, and collaboration. Our mission is to bridge the gap for operators without access to local clubs, offering resources and opportunities to connect and grow."
+      - text: "Partnering with local clubs, we aim to enrich the shared experience of learning and communication. Together, we’re advancing the craft, embracing innovation, and building a vibrant network of radio operators across Iowa."
+     
+
+
+  social_media:
+    github:
+      enabled: true
+      url: 'https://github.com/Iowa-Radio-Operators'
+    facebook:
+      enabled: true
+      url: 'https://www.facebook.com/k0iro'
+    youtube:
+      enabled: true
+      url: 'https://www.youtube.com/@K0IRO-IowaRadioOperators'
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: categories
+      pre: dropdown
+      name: Categories
+      weight: 30
+    - identifier: dropdown
+      pre: complexdropdown
+      name: Dropdown
+      weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+  categories:
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+  dropdown:
+    - identifier: appearance
+      pre: stars # can be stars, comments or piechart
+      name: Appearance
+      post: "Easy customization"
+      url: "#"
+      weight: 10
+    - identifier: comments
+      pre: comments # can be stars, comments or piechart
+      name: Comments
+      post: "Check your latest comments"
+      url: "#"
+      weight: 20
+    - identifier: analytics
+      pre: piechart # can be stars, comments or piechart
+      name: Analytics
+      post: "Take a look at your statistics"
+      url: "#"
+      weight: 30
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /categories/blog/
+      weight: 20
+    - identifier: news
+      name: News
+      url: /categories/news/
+      weight: 30
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: false
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.148.2"
+
+# Performance optimizations
+caches:
+  assets:
+    dir: :cacheDir/assets
+    maxAge: "0s" # Disable caching in development
+  getcsv:
+    dir: :cacheDir/getcsv
+    maxAge: 3600s # 1 hour
+  getjson:
+    dir: :cacheDir/getjson
+    maxAge: 3600s # 1 hour
+  images:
+    dir: :cacheDir/images
+    maxAge: 8760h # 1 year
+  modules:
+    dir: :cacheDir/modules
+    maxAge: 8760h # 1 year
+
+# Image processing defaults
+imaging:
+  quality: 85
+  resampleFilter: lanczos
+  anchor: smart
