@@ -79,7 +79,6 @@ menu:
     - identifier: about
       pre: dropdown
       name: About
-      url: /about/
       weight: 10
     - identifier: become-operator
       name: Become an Operator
@@ -127,7 +126,28 @@ menu:
     - identifier:  blog
       name: Blog
       url: /categories/blog/
-      weight: 20  
+      weight: 20
+  community:
+    - identifier: community
+      name: Community
+      url: /community/community
+      weight: 10   
+    - identifier:  contests
+      name: Contests
+      url: /community/contests
+      weight: 20
+    - identifier:  nets
+      name: Nets
+      url: /community/nets
+      weight: 30
+    - identifier: events
+      name: Event Calendar
+      url: /community/events
+      weight: 40
+    - identifier: radio-clubs
+      name: Radio Clubs
+      url: /community/radio-clubs
+      weight: 50     
   footer:
     - identifier: about
       name: About
