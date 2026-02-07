@@ -44,7 +44,7 @@ And tonight, Iowa is showing up strong. Operators across the state are tuning in
 {{< imgc src="posts/qrp-net.png" alt="State Wide POTA" >}}
 
 
-{{< imgc src="posts/2025-statewide-pota/qrp-net-list.png" alt="State Wide POTA" >}}
+{{< imgc src="posts/qrp-net-list.png" alt="State Wide POTA" >}}
 
 
 You can check out their youtube channel here for previous and when the next net is up. Like and subscribe!
