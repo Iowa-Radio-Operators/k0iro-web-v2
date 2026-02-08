@@ -1,6 +1,6 @@
 ---
 title: "Iowa Winlink Weekend"
-date: 2025-01-16
+date: 2026-01-16
 draft: false
 language: en
 summary: Iowa Winlink Weekend and Other Winlink Info
@@ -37,6 +37,10 @@ Vara FM:
 
 {{< imgc src="posts/winlink-varafm.jpg" alt="Winlink Info" >}}
 
+Vara HF:
+
 {{< imgc src="posts/winlink-varahf.jpg" alt="inlink Info" >}}
+
+Packet Winlink:
 
 {{< imgc src="posts/winlink-packet.jpg" alt="inlink Info" >}}

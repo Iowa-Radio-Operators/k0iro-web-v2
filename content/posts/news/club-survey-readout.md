@@ -3,7 +3,6 @@ title: "K0IRO Survey Results and Updates"
 date: 2025-12-30
 draft: false
 language: en
-
 summary: K0IRO Survey Results and Updates readout for the survey starting the club
 description: K0IRO Survey Results and Updates
 author: Jason Joehr | KD0MUB | jasonl@k0iro.com

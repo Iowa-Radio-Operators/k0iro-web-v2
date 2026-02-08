@@ -1,9 +1,8 @@
 ---
 title: "2025 Cedar Valley Ham Fest"
-date: 2025-12-30
+date: 2025-06-03
 draft: false
 language: en
-
 summary: CVARC Ham Fest Dates, Locations and Details
 description: CVARC Ham Fest Dates, Locations and Details
 author: Calvin Jutting | KN0CTJ | calvin@k0iro.com

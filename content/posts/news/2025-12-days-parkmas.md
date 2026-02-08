@@ -3,12 +3,11 @@ title: "12 Days of Parkmas"
 date: 2025-12-03
 draft: false
 language: en
-
 summary: Introducing 12 days of Parkmas, Rules and Prizes. A Contest encouraging to get out in the cold and activate POTA parks
 description: Introducing 12 days of Parkmas, Rules and Prize. 
 author: Calvin Jutting | KN0CTJ | calvin@k0iro.com
 categories: News
-tags: News, Parkmas
+tags: News
 ---
 
 # KOIRO 12 Days of Park-mas - Contest Rules

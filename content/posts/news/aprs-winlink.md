@@ -1,5 +1,5 @@
 ---
-title: "K0IRO Winlink APRS Info"
+title: "K0IRO Winlink and APRS Info"
 date: 2025-11-18
 draft: true
 language: en

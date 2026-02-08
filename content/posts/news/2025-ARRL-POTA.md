@@ -3,7 +3,6 @@ title: "ARRL Section Looking for Photos"
 date: 2025-12-30
 draft: false
 language: en
-
 summary: K0DKS, Iowa ARRL Section Leader Looking for Photos of POTA Activations and General Radio Activity
 description: K0DKS, Iowa ARRL Section Leader Looking for Photos of POTA Activations and General Radio Activity 
 author: Calvin Jutting | KN0CTJ | calvin@k0iro.com

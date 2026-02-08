@@ -3,7 +3,6 @@ title: "AREDN Introduction - What is it, Why Does It Matter"
 date: 2025-09-25
 draft: false
 language: en
-
 summary: Introduction to AREDN and the Mesh in Eastern Iowa
 description: Introduction to AREDN and the Mesh in Eastern Iowa
 author: Kraig, Wilford | KD0CGN | kraigawilford@gmail.com
