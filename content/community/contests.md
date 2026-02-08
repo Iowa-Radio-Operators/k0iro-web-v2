@@ -1,6 +1,6 @@
 ---
 title: "Contests"
-date: 2021-12-18T
+date: 2021-12-18
 draft: false
 language: en
 description: Community

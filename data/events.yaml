@@ -1,0 +1,68 @@
+# Events data for FullCalendar
+# Updated with 2026 dates
+
+- title: "Community Meeting"
+  start: "2026-02-10T10:00:00"
+  end: "2026-02-10T11:30:00"
+  color: "#4f46e5"
+  description: "Monthly community meeting to discuss upcoming events and initiatives."
+  url: "/events/community-meeting"
+
+- title: "Yoga Class"
+  start: "2026-02-12T09:00:00"
+  end: "2026-02-12T10:00:00"
+  color: "#10b981"
+  description: "Beginner-friendly yoga session. Bring your own mat!"
+
+- title: "Tech Workshop"
+  start: "2026-02-15T14:00:00"
+  end: "2026-02-15T16:00:00"
+  color: "#f59e0b"
+  description: "Learn about web development with Hugo and TailwindCSS."
+  url: "/workshops/tech"
+
+- title: "Book Club"
+  start: "2026-02-18T18:30:00"
+  end: "2026-02-18T20:00:00"
+  color: "#8b5cf6"
+  description: "This month we're reading 'The Great Gatsby'"
+
+- title: "Volunteer Day"
+  start: "2026-02-22"
+  color: "#ef4444"
+  description: "All-day community volunteer event. No specific time required."
+
+# Recurring event example (add multiple entries)
+- title: "Morning Coffee"
+  start: "2026-02-10T08:00:00"
+  end: "2026-02-10T09:00:00"
+  color: "#6366f1"
+
+- title: "Morning Coffee"
+  start: "2026-02-17T08:00:00"
+  end: "2026-02-17T09:00:00"
+  color: "#6366f1"
+
+- title: "Morning Coffee"
+  start: "2026-02-24T08:00:00"
+  end: "2026-02-24T09:00:00"
+  color: "#6366f1"
+
+# March events
+- title: "Spring Planning Meeting"
+  start: "2026-03-05T14:00:00"
+  end: "2026-03-05T16:00:00"
+  color: "#4f46e5"
+  description: "Plan spring activities and events"
+
+- title: "Outdoor Yoga"
+  start: "2026-03-12T09:00:00"
+  end: "2026-03-12T10:00:00"
+  color: "#10b981"
+  description: "Weather permitting, we'll meet at the park!"
+
+# April events
+- title: "Earth Day Celebration"
+  start: "2026-04-22"
+  color: "#10b981"
+  description: "All-day Earth Day activities and workshops"

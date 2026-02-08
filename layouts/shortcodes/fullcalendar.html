@@ -1,0 +1,180 @@
+{{ $events := .Site.Data.events }}
+
+<!-- FullCalendar CSS -->
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css' rel='stylesheet' />
+
+<!-- Calendar Container - Full width with breakout -->
+<div class="fullcalendar-wrapper">
+  <div id='calendar'></div>
+</div>
+
+<!-- FullCalendar JS -->
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+      },
+      events: [
+        {{ range $events }}
+        {
+          title: '{{ .title }}',
+          start: '{{ .start }}',
+          {{ if .end }}end: '{{ .end }}',{{ end }}
+          {{ if .url }}url: '{{ .url }}',{{ end }}
+          {{ if .color }}backgroundColor: '{{ .color }}',{{ end }}
+          {{ if .description }}
+          extendedProps: {
+            description: '{{ .description }}'
+          },
+          {{ end }}
+        },
+        {{ end }}
+      ],
+      eventClick: function(info) {
+        {{ if .Get "showModal" }}
+        // Show event details in modal
+        if (info.event.extendedProps.description) {
+          alert(info.event.title + '\n\n' + info.event.extendedProps.description);
+        }
+        {{ end }}
+        
+        // If event has a URL, prevent default and let the link work
+        if (info.event.url) {
+          info.jsEvent.preventDefault();
+          window.open(info.event.url);
+        }
+      },
+      // Responsive settings
+      height: 'auto',
+      contentHeight: 'auto',
+      
+      // Week starts on Sunday (change to 1 for Monday)
+      firstDay: 0,
+      
+      // Time format
+      eventTimeFormat: {
+        hour: '2-digit',
+        minute: '2-digit',
+        meridiem: 'short'
+      }
+    });
+    
+    calendar.render();
+  });
+</script>
+
+<style>
+  /* Break out of prose/content container constraints */
+  .fullcalendar-wrapper {
+    /* Remove prose constraints */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 2rem 1rem;
+  }
+  
+  /* Calendar container with max-width and centering */
+  #calendar {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Responsive padding */
+  @media (min-width: 640px) {
+    .fullcalendar-wrapper {
+      padding: 2rem;
+    }
+    #calendar {
+      padding: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .fullcalendar-wrapper {
+      padding: 3rem 2rem;
+    }
+    #calendar {
+      padding: 2.5rem;
+    }
+  }
+  
+  /* Dark mode support */
+  .dark .fullcalendar-wrapper {
+    background: transparent;
+  }
+  
+  .dark #calendar {
+    background: rgb(31 41 55);
+    --fc-border-color: #374151;
+    --fc-button-bg-color: #4f46e5;
+    --fc-button-border-color: #4f46e5;
+    --fc-button-hover-bg-color: #4338ca;
+    --fc-button-hover-border-color: #4338ca;
+    --fc-button-active-bg-color: #3730a3;
+    --fc-button-active-border-color: #3730a3;
+    --fc-today-bg-color: rgba(79, 70, 229, 0.1);
+  }
+  
+  .dark .fc-theme-standard td,
+  .dark .fc-theme-standard th {
+    border-color: #374151;
+  }
+  
+  .dark .fc-theme-standard .fc-scrollgrid {
+    border-color: #374151;
+  }
+  
+  .dark .fc-col-header-cell-cushion,
+  .dark .fc-daygrid-day-number {
+    color: #e5e7eb;
+  }
+  
+  .dark .fc-toolbar-title {
+    color: #f3f4f6;
+  }
+  
+  .dark .fc-event {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Better event styling */
+  .fc-event {
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+  }
+  
+  .fc-event:hover {
+    opacity: 0.85;
+  }
+  
+  /* Improve mobile responsiveness */
+  @media (max-width: 639px) {
+    .fc-header-toolbar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .fc-toolbar-chunk {
+      display: flex;
+      justify-content: center;
+    }
+  }
+</style>
