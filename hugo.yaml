@@ -74,6 +74,8 @@ params:
       enabled: true
       url: 'mailto:info@k0iro.com'
 
+## GitHub Link for Later YG2RHUqjEz
+
 menu:
   main:
     - identifier: about
@@ -104,20 +106,24 @@ menu:
   about:
     - identifier: about
       name: About
-      url: /about/
+      url: /about/about-us
       weight: 10   
     - identifier: leadership
       name: Leadership
-      url: /leadership/
+      url: about//leadership/
       weight: 20
     - identifier: mission-vision
       name: Mission & Vision
-      url: /mission-vision/
+      url: /about/mission-vision/
       weight: 30
     - identifier: Membership
       name: Membership
-      url: /membership/
+      url: about/membership/
       weight: 40
+    - identifier: Repeaters
+      name: Repeaters
+      url: about/repeaters/
+      weight: 50      
   news:
     - identifier: news
       name: News
@@ -203,18 +209,19 @@ caches:
   assets:
     dir: :cacheDir/assets
     maxAge: "0s" # Disable caching in development
-  getcsv:
-    dir: :cacheDir/getcsv
-    maxAge: 3600s # 1 hour
-  getjson:
-    dir: :cacheDir/getjson
-    maxAge: 3600s # 1 hour
+
   images:
     dir: :cacheDir/images
     maxAge: 8760h # 1 year
+
   modules:
     dir: :cacheDir/modules
     maxAge: 8760h # 1 year
+
+  # Optional: catch‑all for anything not covered above
+  misc:
+    dir: :cacheDir/misc
+    maxAge: 3600s
 
 # Image processing defaults
 imaging:

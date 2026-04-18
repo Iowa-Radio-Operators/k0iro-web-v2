@@ -10,7 +10,7 @@ directory = "./public"
 not_found_handling = "404-page"
 
 [vars]
-HUGO_VERSION = "0.148.2"
+HUGO_VERSION = "0.160.0"
 HUGO_ENV = "production"
 NODE_VERSION = "24.13.0"
 TZ = "America/Chicago"

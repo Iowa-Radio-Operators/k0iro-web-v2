@@ -22,5 +22,4 @@ featured_image:
 [jasonl@k0iro.com](mailto:jasonl@k0iro.com)
 
 ## Marketing – Community Relations
-**Ben – K0BJJ**  
-[ben@k0iro.com](mailto:ben@k0iro.com)
+** Open **
