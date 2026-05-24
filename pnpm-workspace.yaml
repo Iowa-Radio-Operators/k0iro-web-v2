@@ -1,5 +1,8 @@
 packages:
   - "."
 
+allowBuilds:
+  esbuild: true
+
 overrides:
   tar: ">=7.5.2"
