@@ -1,2 +1,5 @@
+packages:
+  - "."
+
 overrides:
-  tar: ">=7.5.2"    
+  tar: ">=7.5.2"
