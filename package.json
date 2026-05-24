@@ -50,9 +50,5 @@
     "url": "https://github.com/nusserstudios/tailbliss/issues"
   },
   "homepage": "https://github.com/nusserstudios/tailbliss",
-  "pnpm": {
-    "overrides": {
-      "tar": ">=7.5.2"
-    }
   }
 }
