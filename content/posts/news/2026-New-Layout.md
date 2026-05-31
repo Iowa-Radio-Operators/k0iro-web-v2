@@ -1,6 +1,6 @@
 ---
 title: "New Layout"
-date: 2026-06-01
+date: 2026-05-31
 draft: false
 language: en
 summary: New Website Layout!
