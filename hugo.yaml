@@ -70,6 +70,9 @@ params:
     youtube:
       enabled: true
       url: 'https://www.youtube.com/@K0IRO-IowaRadioOperators'
+    discord:
+      enabled: true
+      url: 'https://discord.gg/YG2RHUqjEz'
     email:
       enabled: true
       url: 'mailto:info@k0iro.com'
