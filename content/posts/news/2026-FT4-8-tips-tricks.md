@@ -1,6 +1,6 @@
 ---
 title: "FT8-4 Tips and Tricks"
-date: 2026-9-11
+date: 2026-09-11
 draft: false
 language: en
 summary: FT8-4 Tips and Tricks
