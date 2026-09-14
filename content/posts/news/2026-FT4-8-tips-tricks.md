@@ -38,3 +38,5 @@ Lots more to come. I will make a nicer doc, but wanted to get these down quick a
 #11 Audible alerts are nice for those special entities you are hunting, but be aware that if you have them running on the same machine that you are running wsjt-x on, that you have to assign the proper sound output device. You don't want to send the notice to your radio, just your speakers. Your radio appears to the system as a sound card, so if you had one sound card on the system, now you have two. Most OSes have the ability to direct sound from a particular application to a particular output device.
 
 #12 If the band you are on is slammed full of stations, and it feels like you are not getting much of anywhere, many other operators also feel like you, and have switched over to FT4 on that band. You should click over there to see what is going on as well, Be ready. FT4 is 2x the speed of FT8, and with fewer stations, the QSOs can come flying at you. After a while on FT4, switching back to FT8 feels really slow
+
+#13 make sure your clock is 100% in sync with NTP or similar software. 
